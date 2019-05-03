@@ -34,12 +34,12 @@ app.layout = html.Div(children=[
     dcc.Input(
         id='Player1',
         type='number',
-        value=5
+        value=0
     ),
     dcc.Input(
         id='Player2',
-        type='number',
-        value=5
+        type='text',
+        value='JANNEFUCKINGHELLBOM'
     )
 ])
 
@@ -51,7 +51,7 @@ app.layout = html.Div(children=[
      Output('Ola', 'children')],
     [Input('Player1', 'value')])
 def callback_a(x):
-    return x**2, x**3, 2**x, 3**x, x**x
+    return x, x, x, x, x
 
 if __name__ == '__main__':
     app.run_server(debug=True)
